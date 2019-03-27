@@ -1,14 +1,16 @@
 {
-  "name": "multicast-dns",
-  "version": "7.2.0",
+  "name": "zwot-dns-multicast",
+  "version": "1.0.0",
   "description": "Low level multicast-dns implementation in pure javascript",
   "main": "index.js",
   "scripts": {
     "test": "standard && tape test.js"
   },
-  "bin": "cli.js",
+  "bin": {
+    "multicast-dns": "cli.js"
+  },
   "dependencies": {
-    "dns-packet": "^4.0.0",
+    "zwotdns-packet": "1.0.1",
     "thunky": "^1.0.2"
   },
   "devDependencies": {
@@ -17,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/multicast-dns.git"
+    "url": "git+https://github.com/mafintosh/multicast-dns.git"
   },
   "author": "Mathias Buus (@mafintosh)",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mafintosh/multicast-dns/issues"
   },
